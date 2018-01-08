@@ -15,6 +15,10 @@
 		78A4545B2003483800976D0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A4545A2003483800976D0F /* main.m */; };
 		78A454652003483800976D0F /* NewYearPsychologicalTestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A454642003483800976D0F /* NewYearPsychologicalTestsTests.m */; };
 		78A454702003483800976D0F /* NewYearPsychologicalTestsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A4546F2003483800976D0F /* NewYearPsychologicalTestsUITests.m */; };
+		78A4548220034BA900976D0F /* NYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A4548120034BA900976D0F /* NYTabBarController.m */; };
+		78A4548620034C1600976D0F /* NYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A4548520034C1600976D0F /* NYTabBar.m */; };
+		78A4548F200352DB00976D0F /* NYConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A4548E200352DB00976D0F /* NYConsts.m */; };
+		78A45496200356B300976D0F /* NYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A45495200356B300976D0F /* NYNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,17 @@
 		78A4546B2003483800976D0F /* NewYearPsychologicalTestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewYearPsychologicalTestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A4546F2003483800976D0F /* NewYearPsychologicalTestsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewYearPsychologicalTestsUITests.m; sourceTree = "<group>"; };
 		78A454712003483800976D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78A4548020034BA900976D0F /* NYTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYTabBarController.h; sourceTree = "<group>"; };
+		78A4548120034BA900976D0F /* NYTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYTabBarController.m; sourceTree = "<group>"; };
+		78A4548420034C1600976D0F /* NYTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYTabBar.h; sourceTree = "<group>"; };
+		78A4548520034C1600976D0F /* NYTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYTabBar.m; sourceTree = "<group>"; };
+		78A4548D200352DB00976D0F /* NYConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYConsts.h; sourceTree = "<group>"; };
+		78A4548E200352DB00976D0F /* NYConsts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYConsts.m; sourceTree = "<group>"; };
+		78A454902003530D00976D0F /* Headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Headers.h; sourceTree = "<group>"; };
+		78A45492200353BA00976D0F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		78A454932003550100976D0F /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		78A45494200356B300976D0F /* NYNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYNavigationController.h; sourceTree = "<group>"; };
+		78A45495200356B300976D0F /* NYNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +116,13 @@
 		78A4544A2003483700976D0F /* NewYearPsychologicalTests */ = {
 			isa = PBXGroup;
 			children = (
+				78A45491200353A400976D0F /* Supporting Files */,
+				78A4547D2003498E00976D0F /* Classes */,
 				78A4544B2003483700976D0F /* AppDelegate.h */,
 				78A4544C2003483700976D0F /* AppDelegate.m */,
 				78A4544E2003483700976D0F /* ViewController.h */,
 				78A4544F2003483700976D0F /* ViewController.m */,
 				78A454512003483700976D0F /* Main.storyboard */,
-				78A454542003483700976D0F /* Assets.xcassets */,
-				78A454562003483700976D0F /* LaunchScreen.storyboard */,
-				78A454592003483800976D0F /* Info.plist */,
-				78A4545A2003483800976D0F /* main.m */,
 			);
 			path = NewYearPsychologicalTests;
 			sourceTree = "<group>";
@@ -130,6 +143,107 @@
 				78A454712003483800976D0F /* Info.plist */,
 			);
 			path = NewYearPsychologicalTestsUITests;
+			sourceTree = "<group>";
+		};
+		78A4547D2003498E00976D0F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				78A4547E2003498E00976D0F /* Main */,
+				78A454872003524800976D0F /* Expand */,
+				78A4548B200352A900976D0F /* Resource */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		78A4547E2003498E00976D0F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				78A4548320034BFE00976D0F /* View */,
+				78A4547F2003498E00976D0F /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		78A4547F2003498E00976D0F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				78A45494200356B300976D0F /* NYNavigationController.h */,
+				78A45495200356B300976D0F /* NYNavigationController.m */,
+				78A4548020034BA900976D0F /* NYTabBarController.h */,
+				78A4548120034BA900976D0F /* NYTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		78A4548320034BFE00976D0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78A4548420034C1600976D0F /* NYTabBar.h */,
+				78A4548520034C1600976D0F /* NYTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78A454872003524800976D0F /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				78A454882003524800976D0F /* Const */,
+				78A454892003524800976D0F /* Macros */,
+				78A4548A2003524800976D0F /* Headers */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		78A454882003524800976D0F /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				78A4548D200352DB00976D0F /* NYConsts.h */,
+				78A4548E200352DB00976D0F /* NYConsts.m */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		78A454892003524800976D0F /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				78A454932003550100976D0F /* Macros.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		78A4548A2003524800976D0F /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				78A454902003530D00976D0F /* Headers.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		78A4548B200352A900976D0F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				78A4548C200352A900976D0F /* Images */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		78A4548C200352A900976D0F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		78A45491200353A400976D0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78A454542003483700976D0F /* Assets.xcassets */,
+				78A45492200353BA00976D0F /* PrefixHeader.pch */,
+				78A454562003483700976D0F /* LaunchScreen.storyboard */,
+				78A454592003483800976D0F /* Info.plist */,
+				78A4545A2003483800976D0F /* main.m */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +308,7 @@
 		78A454402003483700976D0F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NY;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Alice Jin";
 				TargetAttributes = {
@@ -267,6 +382,10 @@
 			files = (
 				78A454502003483700976D0F /* ViewController.m in Sources */,
 				78A4545B2003483800976D0F /* main.m in Sources */,
+				78A4548620034C1600976D0F /* NYTabBar.m in Sources */,
+				78A45496200356B300976D0F /* NYNavigationController.m in Sources */,
+				78A4548220034BA900976D0F /* NYTabBarController.m in Sources */,
+				78A4548F200352DB00976D0F /* NYConsts.m in Sources */,
 				78A4544D2003483700976D0F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,9 +550,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36DSW7DB5F;
 				INFOPLIST_FILE = NewYearPsychologicalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.HKT.NewYearPsychologicalTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JinChen.NewYearPsychologicalTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -444,9 +564,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36DSW7DB5F;
 				INFOPLIST_FILE = NewYearPsychologicalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.HKT.NewYearPsychologicalTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JinChen.NewYearPsychologicalTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
